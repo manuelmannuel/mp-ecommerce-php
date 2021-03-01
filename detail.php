@@ -24,8 +24,6 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
 
-    <script src="https://www.mercadopago.com/v2/security.js" view="detail.php"></script>
-
     <link rel="stylesheet" href="./assets/category-landing.css" media="screen, print">
 
     <link rel="stylesheet" href="./assets/category.css" media="screen, print">
@@ -151,7 +149,7 @@
                                         $payer = new MercadoPago\Payer();
                                         $payer->name                    = "Lalo";
                                         $payer->surname                 = "Landa";
-                                        $payer->email                   = "test_user_58295862@testuser.com";
+                                        $payer->email                   = "test_user_81131286@testuser.com";
                                         $payer->phone = array(
                                             "area_code" => "52",
                                             "number" => "5549737300"
@@ -213,7 +211,7 @@
                                         //$preference->items = array($item);
                                         
                                         $preference->external_reference = "manuelmannuel@gmail.com";
-                                        $preference->notification_url="http://manuelmannuel-mp-ecommerce-php.herokuapp.com/webhook.php";
+                                        $preference->notification_url="https://manuelmannuel-mp-ecommerce-php.herokuapp.com/webhook.php";
                                         $preference->save(); # Save the preference and send the HTTP Request to create
                                         //var_dump($preference);
                                         # Return the HTML code for button
